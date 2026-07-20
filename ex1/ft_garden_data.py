@@ -11,9 +11,13 @@ class Plant:
         return f"{self.name}: {self.height}cm, {self.age} days old"
 
 
-if __name__ == "__main__":
-    rose = Plant("Rose", 25, 30)
-    sunflower = Plant("Sunflower", 80, 45)
-    cactus = Plant("Cactus", 15, 120)
+def main() -> None:
+    rose = Plant("Rose", 25.0, 30)
+    sunflower = Plant("Sunflower", 80.0, 45)
+    cactus = Plant("Cactus", 15.0, 120)
     print("=== Garden Plan Registry ===")
     print(f"{rose.show()}\n{sunflower.show()}\n{cactus.show()}")
+
+
+if __name__ == "__main__":
+    main()
