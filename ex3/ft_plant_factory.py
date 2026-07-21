@@ -3,9 +3,9 @@
 
 class Plant:
     def __init__(self, name: str, height: float, age: int) -> None:
-        self.name = name
-        self.height = height
-        self.age = age
+        self.name: str = name
+        self.height: float = height
+        self.age: int = age
 
     def show(self) -> str:
         return f"{self.name}: {self.height}cm, {self.age} days old"
