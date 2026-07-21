@@ -36,21 +36,18 @@ class Plant:
     def set_age(self, new_age: int) -> None:
         if self._validate_positive(new_age, "age"):
             self._age = new_age
-            print(f"Age updated: {self._age} days")
+            print(f"Age updated: {self._age} days\n")
 
 
 def main() -> None:
     print("=== Garden Security System ===")
     rose = Plant("Rose", 15.0, 10)
-    print(f"Plant created: {rose.show()}")
-
+    print(f"Plant created: {rose.show()}\n")
     rose.set_height(25)
     rose.set_age(30)
-    print("")
-
     rose.set_height(-1)
     rose.set_age(-10)
-
+    print("")
     print(f"Current state: {rose.show()}")
 
 
